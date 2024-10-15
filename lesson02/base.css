@@ -1,0 +1,20 @@
+body h1 {
+}
+body h1 {
+	color: #AE6901;
+	font-family: "HGP教科書体";
+	font-size: 40px;
+}
+.key {
+	color: #FFFFFF;
+	background-color: #7D5305;
+	font-size: x-large;
+	
+}
+body {
+	background-image: url(skyandrainbows.jpg);
+}
+
+body p img {
+	border: 10px double #AEC509;
+}
