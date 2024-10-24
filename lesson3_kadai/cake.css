@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+img{
+	width:100%;
+}
+.shop {
+	background-color: #FF15BF;
+ }
+ .cakes{
+ background-color: #88fc04;
+ float:left;
+ width:50%;
+ }
+ 
