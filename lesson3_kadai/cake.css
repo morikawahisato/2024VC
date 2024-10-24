@@ -11,4 +11,8 @@ img{
  float:left;
  width:50%;
  }
- 
+ body p {
+}
+body h1 {
+	font-size: 5vw;
+}
