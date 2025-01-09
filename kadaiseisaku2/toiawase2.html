@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>toiawase</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="yakistyle2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-md-4">
+                    <img src="logogyuu.gif" alt="ロゴ" class="logo">
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="yakiniku2.html">TOP</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="menu2.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        メニュー
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="menu2.html#beef">牛肉</a>
+                                        <a class="dropdown-item" href="menu2.html#pork">豚肉</a>
+                                        <a class="dropdown-item" href="menu2.html#chicken">鶏肉</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="tenpo2.html">店舗情報</a></li>
+                                <li class="nav-item"><a class="nav-link" href="toiawase2.html">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main container">
+        <h1><img src="toiawase.png" alt="お問い合わせ" class="img-fluid"></h1>
+        <div class="toiawase">
+            <h2>お問い合わせについて</h2>
+            <p>
+                お問い合わせ、ご要望等については下記の連絡先にお願いします。<br>
+                電話番号　000-456-7890<br>
+                メール　 info@yakiniki.umai.up<br>
+                ※電話でのお問い合わせは営業時間外は対応しておりません。<br>
+                店舗情報をご確認の上お電話ください。
+            </p>
+        </div>
+        <audio id="bgm" loop>
+            <source src="nikubgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <footer class="text-center">
+        <p><small>© 2024 牛工大</small></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('bgm');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+                document.body.addEventListener('click', function() {
+                    audio.play();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
