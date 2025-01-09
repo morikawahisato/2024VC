@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>menu</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link href="yakistyle2.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-md-4">
+                    <img src="logogyuu.gif" alt="ロゴ" class="logo">
+                </div>
+                <div class="col-md-8">
+                    <nav class="navbar navbar-expand-md navbar-light bg-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item"><a class="nav-link" href="yakiniku2.html">TOP</a></li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="menu2.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        メニュー
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                        <a class="dropdown-item" href="#beef">牛肉</a>
+                                        <a class="dropdown-item" href="#pork">豚肉</a>
+                                        <a class="dropdown-item" href="#chicken">鶏肉</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" href="tenpo2.html">店舗情報</a></li>
+                                <li class="nav-item"><a class="nav-link" href="toiawase2.html">お問い合わせ</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main container">
+        <h1><img src="menuimage.png" alt="メニュー" class="img-fluid"></h1>
+        <div id="beef" class="menu-section">
+            <h2>牛肉</h2>
+            <div class="menu-item">
+                <img src="koudai_karubi.jpg" alt="工大カルビ" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>工大カルビ</h3>
+                    <p>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="karubi.jpg" alt="カルビ" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>カルビ</h3>
+                    <p>牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="harami.jpg" alt="ハラミ" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>ハラミ</h3>
+                    <p>国民のアイドル！お店一押し</p>
+                </div>
+            </div>
+        </div>
+        <div id="pork" class="menu-section">
+            <h2>豚肉</h2>
+            <div class="menu-item">
+                <img src="buta_tan.jpg" alt="トンたん塩" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>トンたん塩</h3>
+                    <p>コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="buta_horumon.jpg" alt="やみつき豚ホルモン" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>やみつき豚ホルモン</h3>
+                    <p>この食感クセになる</p>
+                </div>
+            </div>
+        </div>
+        <div id="chicken" class="menu-section">
+            <h2>鶏肉</h2>
+            <div class="menu-item">
+                <img src="tori_yagen.jpg" alt="ハラミ付きヤゲン" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>ハラミ付きヤゲン</h3>
+                    <p>ジューシーなハラミがついた、コリコリの軟骨</p>
+                </div>
+            </div>
+            <div class="menu-item">
+                <img src="tori_momo.jpg" alt="とりもも" class="menu-image img-fluid">
+                <div class="menu-details">
+                    <h3>とりもも</h3>
+                    <p>お子様にも人気。やわらかくてジューシー</p>
+                </div>
+            </div>
+        </div>
+        <audio id="bgm" loop>
+            <source src="nikubgm.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <footer class="text-center">
+        <p><small>© 2024 牛工大</small></p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var audio = document.getElementById('bgm');
+            audio.play().catch(function(error) {
+                console.log('Autoplay was prevented:', error);
+                document.body.addEventListener('click', function() {
+                    audio.play();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
